@@ -1,0 +1,263 @@
+/* BASE STYLES */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@400;500;600;700;800&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	font-family: "Raleway", sans-serif;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+.container {
+	max-width: 136rem;
+	margin: 0 auto;
+}
+
+/* BASE STYLES END */
+
+/* TOP NAVIGATION START */
+
+header {
+	height: 8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10rem;
+}
+
+.nav-list {
+	display: flex;
+	gap: 5.5rem;
+	list-style-type: none;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	color: #303134;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+/* TOP NAVIGATION END */
+
+/* HERO START */
+
+.hero-image {
+	height: 57rem;
+	background-image: linear-gradient(
+			to bottom,
+			rgba(8, 174, 234, 0.3),
+			rgba(42, 245, 152, 0.5)
+		),
+		url("../img/joshua-earle-IXrJ6pKmLRk-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+}
+
+.hero-inner {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10rem;
+}
+
+.arrow {
+	cursor: pointer;
+	padding: 1rem;
+	background-color: #fff;
+}
+
+.arrow-right {
+	rotate: 180deg;
+}
+
+.hero-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero-center-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28.7rem;
+	height: 8.2rem;
+	background-image: url("../img/hero_white_thingy.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #006cd1;
+	font-size: 2.1rem;
+	font-weight: 800;
+	margin-bottom: 0.6rem;
+}
+
+.hero-main-txt {
+	color: #fff;
+	font-size: 7.8rem;
+	font-weight: 400;
+	margin-bottom: 10rem;
+}
+
+.hero-secondary-txt {
+	color: #fff;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+/* HERO END */
+
+/* SERVICES START */
+
+.services {
+	display: flex;
+	gap: 4rem;
+	padding: 7rem 10rem;
+}
+
+.banner-subtitle {
+	width: 24rem;
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #8d8d8d;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+}
+
+.banner-title {
+	font-size: 2.6rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.banner-text {
+	margin-top: 2.8rem;
+	max-width: 23rem;
+	font-size: 1.6rem;
+	color: #8d8d8d;
+}
+
+/* CARD STYLES */
+
+.services-cards {
+	display: flex;
+	gap: 3rem;
+	flex-wrap: wrap;
+}
+
+.services-card {
+	max-width: 27rem;
+}
+
+.card-title {
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: #1a1a1b;
+	margin-top: 1.4rem;
+	margin-bottom: 0.8rem;
+}
+
+.card-text {
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: #8d8d8d;
+}
+
+/* SERVICES SECTION END */
+
+/* VIDEO SECTION START */
+.video {
+	background-image: url("../img/Watch\ our\ video\ tour.png");
+	height: 50rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 6.8rem;
+	text-align: center;
+	color: white;
+}
+
+.video-top p {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	margin-bottom: 0.7rem;
+}
+
+.video-top h2 {
+	font-size: 2.6rem;
+	font-weight: 400;
+	margin-bottom: 0.6rem;
+}
+
+.video-arrow {
+	fill: white;
+}
+
+.video-bottom {
+	width: 66rem;
+	height: 31rem;
+	background-image: url("../img/video_player.png");
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 4px solid #4b54fa;
+	margin-bottom: -4px;
+}
+
+.video-btn {
+	cursor: pointer;
+}
+
+/* VIDEO SECTION END */
+
+/* STATISTICS SECTION START */
+
+.statistics {
+	padding: 7rem 30rem 5rem 30rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.statistics-element {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.element-img {
+	margin-bottom: 2rem;
+}
+
+.element-number {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 3.2rem;
+	margin-bottom: 0.7rem;
+}
+
+.element-text {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
