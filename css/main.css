@@ -131,7 +131,6 @@ header {
 }
 
 .banner-subtitle {
-	width: 24rem;
 	font-size: 1.6rem;
 	font-weight: 600;
 	color: #8d8d8d;
@@ -150,6 +149,7 @@ header {
 	max-width: 23rem;
 	font-size: 1.6rem;
 	color: #8d8d8d;
+	width: 24rem;
 }
 
 /* CARD STYLES */
@@ -260,4 +260,28 @@ header {
 .element-text {
 	font-size: 1.6rem;
 	text-transform: uppercase;
+}
+
+/* STATISTICS SECTION END */
+
+/* TOURS SECTION START */
+
+.tours {
+	text-align: center;
+	height: 20rem;
+	padding-top: 6rem;
+}
+
+.title-secondary {
+	font-size: 1.6rem;
+	color: #8d8d8d;
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+}
+
+.title-primary {
+	font-size: 2.6rem;
+	text-transform: capitalize;
+	color: #1a1a1b;
+	margin-bottom: 1.2rem;
 }
