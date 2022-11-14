@@ -268,8 +268,7 @@ header {
 
 .tours {
 	text-align: center;
-	height: 20rem;
-	padding-top: 6rem;
+	padding: 6rem 20rem;
 }
 
 .title-secondary {
@@ -284,4 +283,263 @@ header {
 	text-transform: capitalize;
 	color: #1a1a1b;
 	margin-bottom: 1.2rem;
+}
+
+.tours-container {
+	display: flex;
+	gap: 3.1rem;
+	justify-content: center;
+	margin-top: 6.7rem;
+}
+
+.tour-element {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	position: relative;
+	padding-bottom: 2.2rem;
+}
+
+.tour-type {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background-color: #fed701;
+	padding: 0.5rem;
+}
+
+.tour-img {
+	margin-bottom: 1.5rem;
+}
+
+.tour-price,
+.tour-duration {
+	font-size: 1.4rem;
+	color: #1a1a1b;
+}
+
+.tour-title {
+	font-size: 1.8rem;
+	color: #4b54fa;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+/* TOURS SECTION END */
+
+/* SUBSCRIBE SECTION START */
+
+.subscribe {
+	/* height: 35rem; */
+	background-image: url("../img/subscribe-cover.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 8rem;
+	padding-bottom: 8.2rem;
+}
+
+.subscribe-title {
+	font-size: 3.4rem;
+	letter-spacing: 1px;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+.subscribe-description {
+	font-size: 1.8rem;
+	color: #fff;
+	margin-bottom: 6rem;
+}
+
+.subscribe-input {
+	-webkit-appearance: none;
+	border: none;
+	outline: none;
+	width: 39.5rem;
+	height: 5rem;
+	padding: 0 3rem;
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 2.5rem;
+	font-size: 1.6rem;
+	margin-right: 2.2rem;
+}
+
+.subscribe-input::placeholder {
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.subscribe-btn {
+	outline: none;
+	border: none;
+	width: 15.5rem;
+	height: 5rem;
+	border-radius: 2.5rem;
+	font-size: 1.4rem;
+	color: #08aeea;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+/* SUBSCRIBE SECTION END */
+
+/* TRAVELERS SECTION START */
+
+.travelers {
+	text-align: center;
+	padding-top: 7rem;
+}
+
+.travelers-container {
+	display: flex;
+	gap: 3rem;
+	justify-content: center;
+	margin-top: 8rem;
+}
+
+.travelers-card {
+	background-color: #f4f4f4;
+	max-width: 36.8rem;
+	padding: 5.4rem 3.6rem 5rem 3.6rem;
+}
+
+.travelers-name {
+	font-size: 1.8rem;
+	color: #4b54fa;
+	text-transform: capitalize;
+	margin-top: 1.5rem;
+	margin-bottom: 3.66rem;
+	font-weight: 500;
+}
+
+.travelers-text {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #1a1a1b;
+	margin-bottom: 5rem;
+}
+
+/* TRAVELERS SECTION END */
+
+/* BOOKING SEECTION START */
+
+.booking {
+	background-image: url("../img/bsssss.png");
+	height: 50rem;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-direction: column;
+	padding-bottom: 5rem;
+	gap: 4.8rem;
+}
+
+.booking-title {
+	font-size: 3.6rem;
+	font-weight: medium;
+	color: #fff;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.86);
+}
+
+.booking-btn {
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	background: linear-gradient(#08aeea, #2af598);
+	padding: 1.4rem 4.2rem;
+	border-radius: 2.5rem;
+	cursor: pointer;
+}
+
+/* BOOKING SECTION END */
+
+/* POPULAR SECTION START */
+
+.popular {
+	text-align: center;
+	padding: 6rem 0;
+}
+
+.popular-wrapper {
+	margin-top: 7rem;
+	display: flex;
+	justify-content: center;
+	gap: 2.8rem;
+}
+
+.popular-card {
+	display: grid;
+}
+
+.popular-card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding-left: 1.3rem;
+	padding-right: 1.3rem;
+	padding-bottom: 1.3rem;
+}
+
+.card-info-text {
+	align-self: flex-start;
+}
+
+.popular-country {
+	font-size: 3rem;
+	color: #fff;
+	margin-bottom: 0.5rem;
+}
+
+.popular-price {
+	font-family: monospace;
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+.card-info-text {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-img-wrapper {
+	background: linear-gradient(
+		to top,
+		rgba(8, 174, 234, 1),
+		rgba(42, 245, 152, 1)
+	);
+	height: 4rem;
+	width: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.popular-card-thumb,
+.popular-card-content {
+	grid-area: 1/2;
+}
+
+.text-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+/* MAP */
+
+.map {
+	background: url("../img/map2.png");
+	height: 43.5rem;
 }
