@@ -55,8 +55,8 @@ header {
 .hero-image {
 	height: 57rem;
 	background-image: linear-gradient(
-			to bottom,
-			rgba(8, 174, 234, 0.3),
+			to top,
+			rgba(8, 174, 234, 0.5),
 			rgba(42, 245, 152, 0.5)
 		),
 		url("../img/joshua-earle-IXrJ6pKmLRk-unsplash.jpg");
@@ -452,7 +452,11 @@ header {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.6rem;
-	background: linear-gradient(#08aeea, #2af598);
+	background: linear-gradient(
+		to top,
+		rgba(8, 174, 234, 1),
+		rgba(42, 245, 152, 0.9)
+	);
 	padding: 1.4rem 4.2rem;
 	border-radius: 2.5rem;
 	cursor: pointer;
@@ -542,4 +546,6 @@ header {
 .map {
 	background: url("../img/map2.png");
 	height: 43.5rem;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
