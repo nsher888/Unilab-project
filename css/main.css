@@ -293,7 +293,7 @@ header {
 }
 
 .tour-element {
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 	position: relative;
 	padding-bottom: 2.2rem;
 }
@@ -354,7 +354,6 @@ header {
 
 .subscribe-input {
 	-webkit-appearance: none;
-	border: none;
 	outline: none;
 	width: 39.5rem;
 	height: 5rem;
@@ -424,7 +423,7 @@ header {
 
 /* TRAVELERS SECTION END */
 
-/* BOOKING SEECTION START */
+/* BOOKING SECTION START */
 
 .booking {
 	background-image: url("../img/bsssss.png");
@@ -442,9 +441,9 @@ header {
 
 .booking-title {
 	font-size: 3.6rem;
-	font-weight: medium;
+	font-weight: 500;
 	color: #fff;
-	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.86);
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.86);
 }
 
 .booking-btn {
@@ -544,9 +543,8 @@ header {
 /* MAP */
 
 .map {
-	background: url("../img/map2.png");
 	height: 43.5rem;
-	background-repeat: no-repeat;
+	background: url("../img/map2.png") no-repeat;
 	background-size: cover;
 }
 
@@ -590,7 +588,7 @@ ul {
 	font-size: 1.6rem;
 	color: #dcdbdb;
 	text-decoration: none;
-	font-weight: medium;
+	font-weight: 500;
 	display: block;
 	transition: all 0.3s ease;
 }
@@ -641,8 +639,8 @@ ul {
 
 .subscribe-icon-wrapper {
 	position: absolute;
-	top: 0px;
-	right: 0px;
+	top: 0;
+	right: 0;
 	height: 4.7rem;
 	width: 5.8rem;
 	background: linear-gradient(
