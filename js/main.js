@@ -1,6 +1,11 @@
 import { cardsData } from "./cards-data.js";
 
 const cardsContainer = document.getElementById("services-cards");
+const modal = document.getElementById("modal");
+
+const cardElement = document.querySelectorAll(".services-card");
+
+console.log(cardElement);
 
 function render() {
 	let feedHtml = "";
@@ -19,3 +24,13 @@ function render() {
 }
 
 cardsContainer.innerHTML = render();
+
+cardsContainer.addEventListener("click", (e) => {
+	modal.showModal();
+});
+
+modal.addEventListener("click", (e) => {
+	if (e.target == modal) {
+		modal.close();
+	}
+});
