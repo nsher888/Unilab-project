@@ -263,14 +263,15 @@ header {
 }
 
 .video-wrapper {
-	padding: 0 1rem;
 	border-bottom: 4px solid #4b54fa;
 	margin-bottom: -4px;
-	object-fit: cover;
+	object-fit: fill;
 }
 
 .video-player {
-	width: 100%;
+	width: 66.3rem;
+	height: 31.4rem;
+	max-width: 100%;
 }
 /* VIDEO SECTION END */
 
