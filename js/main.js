@@ -10,7 +10,6 @@ const navBarLinks = document.getElementsByClassName("nav-list")[0];
 
 toggleButton.addEventListener("click", () => {
 	navBarLinks.classList.toggle("active");
-	console.log("enab");
 });
 
 function render() {
@@ -32,7 +31,6 @@ function render() {
 cardsContainer.innerHTML = render();
 
 const cardElement = document.querySelectorAll("#services-card");
-console.log(cardElement);
 
 cardElement.forEach((element) => {
 	element.addEventListener("click", (e) => {

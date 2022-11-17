@@ -696,10 +696,9 @@ nav {
 
 /* MAP */
 
-.map {
+.openstreet {
+	width: 100%;
 	height: 43.5rem;
-	background: url("../img/map2.png") no-repeat;
-	background-size: cover;
 }
 
 /* FOOTER */
