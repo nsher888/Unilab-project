@@ -660,25 +660,32 @@ header {
 
 footer {
 	background-color: #141418;
-	padding: 3.4rem;
+	padding-bottom: 2rem;
 }
 
-footer .container {
-	margin-bottom: 2rem;
-	padding-left: 8rem;
-}
-
-.row {
+.footer-content-wrapper {
+	padding: 5rem 10rem;
 	display: flex;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
+	gap: 2rem;
+	border-bottom: 1px solid rgba(232, 232, 232, 0.5);
 }
+
+@media screen and (max-width: 1124px) {
+	.footer-content-wrapper {
+		padding: 5rem 1rem;
+	}
+}
+
+@media screen and (max-width: 910px) {
+	.footer-content-wrapper {
+		gap: 5rem;
+	}
+}
+
 ul {
 	list-style: none;
-}
-
-.footer-col {
-	width: 17%;
-	padding: 0 15px;
 }
 
 .footer-col h4 {
@@ -702,47 +709,7 @@ ul {
 
 .footer-col ul li a:hover {
 	color: #ffffff;
-	padding-left: 8px;
 }
-
-.footer-subscribe-title {
-	font-size: 1.6rem;
-	color: #fff;
-	margin-bottom: 1.5rem;
-}
-
-.subscribe-container {
-	position: relative;
-	width: 34rem;
-	height: 4.7rem;
-	display: block;
-}
-
-.newsletter-input {
-	-webkit-appearance: none;
-	border: none;
-	outline: none;
-	width: 34rem;
-	height: 4.7rem;
-	padding-left: 1.5rem;
-	padding-right: 7rem;
-	font-size: 1.6rem;
-	color: #353030;
-}
-/* 
-.newsletter-input::after {
-	top: 0;
-	left: 0;
-	content: "";
-	position: absolute;
-	height: 4.7rem;
-	width: 5.8rem;
-	background: linear-gradient(
-		to top,
-		rgba(8, 174, 234, 1),
-		rgba(42, 245, 152, 1)
-	);
-} */
 
 .subscribe-icon-wrapper {
 	position: absolute;
@@ -758,9 +725,12 @@ ul {
 	cursor: pointer;
 }
 
-.footer-cont-wrapper {
-	border-bottom: 1px solid rgba(232, 232, 232, 0.5);
-	padding-bottom: 2rem;
+.footer-columns-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 6rem;
 }
 
 .copy {
@@ -770,8 +740,38 @@ ul {
 	margin-top: 2rem;
 }
 
-.footer-subscribe {
-	margin-left: 20rem;
+/* .footer-subscribe {
+	margin-left: auto;
+} */
+
+.footer-subscribe-title {
+	font-size: 1.6rem;
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+
+.subscribe-container {
+	position: relative;
+	height: 4.7rem;
+	display: block;
+}
+
+.newsletter-input {
+	-webkit-appearance: none;
+	border: none;
+	outline: none;
+	width: 34rem;
+	height: 4.7rem;
+	padding-left: 1.5rem;
+	padding-right: 7rem;
+	font-size: 1.6rem;
+	color: #353030;
+}
+
+@media screen and (max-width: 400px) {
+	.newsletter-input {
+		width: 20rem;
+	}
 }
 
 /* FOOTER END */
