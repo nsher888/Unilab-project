@@ -4,6 +4,14 @@ const cardsContainer = document.getElementById("services-cards");
 const modal = document.getElementById("modal");
 const modalWrapper = document.getElementById("dialog-wrapper");
 const body = document.querySelector("body");
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+
+const navBarLinks = document.getElementsByClassName("nav-list")[0];
+
+toggleButton.addEventListener("click", () => {
+	navBarLinks.classList.toggle("active");
+	console.log("enab");
+});
 
 function render() {
 	let feedHtml = "";

@@ -28,16 +28,15 @@ html {
 /* TOP NAVIGATION START */
 
 header {
-	height: 8rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 10rem;
+	padding: 2rem 10rem;
 }
 
 @media screen and (max-width: 1200px) {
 	header {
-		padding: 0 5rem;
+		padding: 2rem 5rem;
 	}
 }
 
@@ -70,6 +69,53 @@ header {
 	.nav-list li a {
 		font-size: 1.4rem;
 	}
+}
+
+/* HAMBURGER MENU */
+
+nav {
+	position: relative;
+}
+
+.toggle-button {
+	position: absolute;
+	top: 3rem;
+	right: 3rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 3rem;
+	height: 2.1rem;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: black;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.toggle-button {
+		display: flex;
+	}
+
+	header {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav-list {
+		display: none;
+		flex-direction: column;
+		margin-top: 2rem;
+		text-align: center;
+	}
+}
+
+.active {
+	display: flex;
 }
 
 /* TOP NAVIGATION END */
