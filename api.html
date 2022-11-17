@@ -12,7 +12,13 @@
 	<body>
 		<div class="api-input-wrapper">
 			<p>How many cats would you like?</p>
-			<input type="number" placeholder="(between 1-100)" id="api-input" />
+			<input
+				type="number"
+				min="1"
+				max="100"
+				placeholder="(between 1-100)"
+				id="api-input"
+			/>
 			<button id="api-btn" class="api-btn">Get Cats Now!</button>
 		</div>
 		<div class="imgs-container"></div>
