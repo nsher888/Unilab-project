@@ -16,9 +16,6 @@ btn.addEventListener("click", () => {
 			data.forEach((element) => {
 				catsHtml += `<img src="${element.url}" alt="" width="300" height="300" />`;
 			});
-
-			console.log(catsHtml);
-
 			container.innerHTML = catsHtml;
 		})
 		.catch(function (error) {
