@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@400;500;600;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	font-family: "Raleway", sans-serif;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	flex-direction: column;
+	text-align: center;
+	padding: 5rem 2rem;
+}
+
+.api-input-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5rem;
+}
+
+.api-input-wrapper p {
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.api-input-wrapper input {
+	padding-left: 2rem;
+	width: 30rem;
+	height: 5rem;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.api-btn {
+	font-size: 1.2rem;
+	border: none;
+	padding: 2rem 4rem;
+	border-radius: 25px;
+	cursor: pointer;
+	background: linear-gradient(
+		to top,
+		rgba(8, 174, 234, 1),
+		rgba(42, 245, 152, 0.9)
+	);
+}
+
+.api-btn:hover {
+	background: linear-gradient(
+		to top,
+		rgba(8, 174, 234, 0.5),
+		rgba(42, 245, 152, 0.9)
+	);
+}
+
+.imgs-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
