@@ -65,6 +65,11 @@ header {
 	text-transform: uppercase;
 }
 
+.nav-list li a:hover {
+	text-underline-offset: 3px;
+	text-decoration: underline;
+}
+
 @media screen and (max-width: 1200px) {
 	.nav-list li a {
 		font-size: 1.4rem;
@@ -522,6 +527,11 @@ nav {
 	color: #08aeea;
 	cursor: pointer;
 	text-transform: uppercase;
+	transition: all 0.2s;
+}
+
+.subscribe-btn:hover {
+	color: black;
 }
 
 .subscribe-wrapper {
@@ -614,6 +624,14 @@ nav {
 	cursor: pointer;
 }
 
+.booking-btn:hover {
+	background: linear-gradient(
+		to top,
+		rgba(8, 174, 234, 0.5),
+		rgba(42, 245, 152, 0.9)
+	);
+}
+
 /* BOOKING SECTION END */
 
 /* POPULAR SECTION START */
@@ -681,6 +699,14 @@ nav {
 	justify-content: center;
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+.card-img-wrapper:hover {
+	background: linear-gradient(
+		to top,
+		rgba(8, 174, 234, 0.5),
+		rgba(42, 245, 152, 0.9)
+	);
 }
 
 .popular-card-thumb,
@@ -768,6 +794,14 @@ ul {
 		rgba(42, 245, 152, 1)
 	);
 	cursor: pointer;
+}
+
+.subscribe-icon-wrapper:hover {
+	background: linear-gradient(
+		to top,
+		rgba(8, 174, 234, 0.6),
+		rgba(42, 245, 152, 0.6)
+	);
 }
 
 .footer-columns-wrapper {
